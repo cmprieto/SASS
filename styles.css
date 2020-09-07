@@ -9,7 +9,7 @@
   overflow: hidden; /* FUNDAMENTAL PARA QUE SE MANTENGA TAMAÑO PANTALLA Y NO APAREZCAN ESPACIOS EN BLANCO QUE SON LOS DESBORDAMIENTOS DE STRIPES */
 }
 
-.padre {
+.container {
   min-height: 100vh;
   display: flex;
   flex-direction: row;
