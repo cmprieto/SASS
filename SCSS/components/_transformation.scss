@@ -1,0 +1,40 @@
+.strip_box {
+  will-change: width, left, z-index, height;
+  position: absolute;
+  width: 20%;
+  min-height: 100vh;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 0px;
+  /*   -------------------------- PARA CENTRAR TEXTO */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+
+&:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  margin: 0px;
+  padding: 0px;
+  width: 100%; /*     width si lo pongo a 20% no se desplaza horizontalmente el vw */
+  min-height: 100vh;
+  background: white;
+  opacity: 0.1;
+  transform: skew(30deg);
+  -webkit-transform: skew(30deg);
+}
+/*TRANSFORMACIONES A REALIZAR CUANDO SE POSA MOUSE SOBRE CADA COLUMNA*/
+
+&:hover:before {
+  background-color: white;
+  opacity: 0.1;
+          transform: skew(0deg) scale(3) translate(0, 0);
+  -webkit-transform: skew(0deg) scale(3) translate(0, 0);
+  z-index: 1;
+  transition: transform 0.6s;
+
+}
+}

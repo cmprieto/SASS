@@ -1,0 +1,23 @@
+@for $i from 1 to 6 {
+  .strip_box:nth-child(#{$i}) {
+    animation-name: stripe#{$i};
+    animation-duration: $i * 0.3s;
+    
+    @if $i==1 {
+      background-color: $color1;
+      left:0;
+    } @else if $i==2 {
+      background-color: $color2;
+      left:20vw;
+    } @else if $i==3 {
+      background-color: $color3;
+      left:40vw;
+    } @else if $i==4 {
+      background-color: $color4;
+      left:60vw;
+    } @else if $i==5 {
+      background-color: $color5;
+      left:80vw;
+    }
+  }
+}

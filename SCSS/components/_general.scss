@@ -1,0 +1,25 @@
+* {
+    padding: 1px 0px;
+    margin: 1px 0px;
+    font-family: "Lato";
+    box-sizing: border-box;
+    overflow: hidden; /* FUNDAMENTAL PARA QUE SE MANTENGA TAMAÑO PANTALLA Y NO APAREZCAN ESPACIOS EN BLANCO QUE SON LOS DESBORDAMIENTOS DE STRIPES */
+  }
+  
+  .container {
+    width: 100vw;
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+
+  }
+  
+  .strip_tittle {
+    color: white;
+    align-items: center;
+    font-size: 4vw;
+  }
+  
